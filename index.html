@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-transition"></div>
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">SUMMIT <span>WEBWORKS</span></a>
       <button class="nav-toggle" aria-label="Open menu">☰</button>
       <ul class="nav-links">
         <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about.html">About</a></li>
@@ -30,16 +32,19 @@
     <section class="hero">
       <div class="mountain-overlay"></div>
       <div class="container grid-2">
-        <div class="hero-copy reveal show">
+        <div class="hero-copy reveal">
           <p class="eyebrow">Helping businesses rise above the competition</p>
           <h1>Websites That Help Contractors Get More Leads</h1>
           <p>Summit Webworks creates modern websites for roofing companies, contractors, and service businesses that want more trust, more calls, and more customers.</p>
           <div class="hero-actions">
             <a class="btn" href="contact.html">Get Free Quote</a>
-            <a class="btn btn-outline" href="#before-after">See Before / After</a>
+            <a class="btn btn-outline" href="portfolio.html">View Portfolio</a>
+          </div>
+          <div class="trust-badges">
+            <span>✔ Mobile Optimized</span><span>✔ Fast Turnaround</span><span>✔ Built for Leads</span><span>✔ Professional Design</span>
           </div>
         </div>
-        <div class="hero-visual reveal show">
+        <div class="hero-visual reveal delay-1">
           <div class="device-mockup">
             <div class="mockup-top"></div>
             <div class="mockup-screen">
@@ -50,18 +55,66 @@
       </div>
     </section>
 
-    <section class="section container" id="before-after">
-      <div class="section-head reveal show">
-        <h2>Before and After</h2>
-        <p>This showcase section is now directly on the homepage so the change is immediately visible.</p>
+    <section class="section container">
+      <div class="section-head reveal"><h2>Services Built for Growth</h2></div>
+      <div class="card-grid four">
+        <article class="card reveal"><h3>Website Redesign</h3><p>Refresh outdated websites into modern lead machines.</p></article>
+        <article class="card reveal delay-1"><h3>New Website Builds</h3><p>Custom websites from scratch tailored to your market.</p></article>
+        <article class="card reveal delay-2"><h3>Local SEO Setup</h3><p>Help businesses rank locally and attract nearby customers.</p></article>
+        <article class="card reveal delay-3"><h3>Monthly Support</h3><p>Hosting, updates, fixes, and ongoing performance care.</p></article>
       </div>
-      <div class="comparison-frame reveal show">
-        <img src="assets/before-after-uploaded.png" alt="Before and after website redesign comparison" loading="lazy">
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><h2>Featured Before / After Projects</h2></div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal"><div class="image-split"><div>Before</div><div>After</div></div><h3>Peak Roofing Co.</h3><p>Industry: Roofing</p><a href="portfolio.html">View Project</a></article>
+          <article class="portfolio-card reveal delay-1"><div class="image-split"><div>Before</div><div>After</div></div><h3>Northline Contractors</h3><p>Industry: Contractors</p><a href="portfolio.html">View Project</a></article>
+          <article class="portfolio-card reveal delay-2"><div class="image-split"><div>Before</div><div>After</div></div><h3>Summit Local Services</h3><p>Industry: Local Business</p><a href="portfolio.html">View Project</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head reveal"><h2>Why Businesses Choose Summit</h2></div>
+      <div class="stats-grid">
+        <div class="stat reveal"><h3>Built for conversions</h3></div><div class="stat reveal delay-1"><h3>Industry-focused strategy</h3></div><div class="stat reveal delay-2"><h3>Fast communication</h3></div><div class="stat reveal"><h3>Trust-building visual design</h3></div><div class="stat reveal delay-1"><h3>Affordable flexible pricing</h3></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><h2>Simple Pricing That Grows With You</h2><p>Final pricing depends on your requests, pages, features, and budget.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card reveal"><h3>Starter Refresh</h3><p>Starting from <strong>$150</strong></p></article>
+          <article class="price-card featured reveal delay-1"><h3>Growth Website</h3><p>Starting from <strong>$300</strong></p></article>
+          <article class="price-card reveal delay-2"><h3>Premium Custom Build</h3><p><strong>Custom Quote</strong></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head reveal"><h2>What Clients Say</h2></div>
+      <div class="card-grid three">
+        <blockquote class="card reveal">“Our new site finally feels premium and we started getting better leads in the first week.”</blockquote>
+        <blockquote class="card reveal delay-1">“Summit delivered fast, communicated clearly, and built us a website we’re proud to send people to.”</blockquote>
+        <blockquote class="card reveal delay-2">“Night-and-day difference from our old website. It now looks trustworthy and modern.”</blockquote>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container reveal">
+        <h2>Ready to Upgrade Your Online Presence?</h2>
+        <div class="hero-actions">
+          <a class="btn" href="contact.html">Start Your Project</a>
+          <a class="btn btn-outline" href="contact.html">Get Free Quote</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer"><div class="container"><p>© 2026 Summit Webworks. Built to help businesses rise higher.</p></div></footer>
-  <script src="script.js?v=2"></script>
+  <script src="script.js"></script>
 </body>
 </html>
